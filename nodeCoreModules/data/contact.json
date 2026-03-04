@@ -1,1 +1,7 @@
-[{"nama":"iqball","repeat":"balle"},{"nama":"kiki","repeat":"kuku"},{"nama":"fauzann","repeat":"uzaan"}]
+[
+  { "nama": "iqbal", "repeat": "ball" },
+  { "nama": "kiki", "repeat": "kuku" },
+  { "nama": "", "repeat": "" },
+  { "nama": "iqbal", "repeat": "balle" },
+  { "name": "iqbak", "repeatName": "bakk" }
+]

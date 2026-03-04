@@ -19,5 +19,3 @@ console.log(cetakNama("iqbal"))
 console.log("hello iqbal");
 
 // ini mengambil yang lain itu tidak bisa karena js mengandung 1 module jadi tidak bisa di ambil module lain
-
-

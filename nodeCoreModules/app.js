@@ -33,36 +33,13 @@ const fs = require("fs");
 // const data = fs.readFileSync("data/test.txt", 'utf-8');
 // console.log(data)
 
-// // membara untuk asncronus
+// // membaca untuk asncronus
 // const data = fs.readFile("data/test.txt", "utf-8", (err, data) => {
 //   if (err) throw err;
 //   console.log(data);
 // });
 
 // console.log(data);
-
-const readline = require("node:readline");
-const { stdin: input, stdout: output } = require("node:process");
-const rl = readline.createInterface({ input, output });
-
-rl.question("wie heibu du : ",(nama)=>{
-  rl.question("wie bitte? ", (repeat) =>{
-    const contact = {
-      nama : nama,
-      repeat : repeat
-    }
-    const file = fs.readFile("data/contact.json",'utf-8',(e,data)=>{
-      console.
-    })
-  })
-} )
-
-
-
-
-
-
-
 
 // readLine
 // const readline = require("readline");
@@ -97,5 +74,30 @@ rl.question("wie heibu du : ",(nama)=>{
 //     fs.writeFileSync("data/contact.json", JSON.stringify(contacts));
 //     console.log("thks yout date");
 //     rl.close();
+//   });
+// });
+
+// // more logic bismillah
+// const readline = require("node:readline");
+// const { stdin: input, stdout: output } = require("node:process");
+// const rl = readline.createInterface({ input, output });
+
+// rl.question("wie heibee sie ? ", (ich) => {
+//   rl.question("bitee widersoon sie : ", (ichBin) => {
+//     const contact = {
+//       name: ich,
+//       repeatName: ichBin,
+//     };
+//     fs.readFile("data/contact.json", "utf-8", (err, data) => {
+//       if (err) throw err;
+//       const contacts = data ? JSON.parse(data) : [];
+//       contacts.push(contact);
+//       fs.writeFile("data/contact.json", JSON.stringify(contacts), (err) => {
+//         if (err) throw err;
+//         console.log("succesfull");
+
+//         rl.close();
+//       });
+//     });
 //   });
 // });
