@@ -1,0 +1,97 @@
+node.js
+node js itu adalah js runtime yang di buat didalm js v8/untuk membuat aplikasi asycronus
+node.js itu bukan bahasa pemrogramana tetapi itu runtime untuk menjalankan js, 
+runtime itu tempat kita menjalankan program
+node bisa mengakses memory,IO,network,file system,dll
+node js dibuat karena js dengan teknologi v8 hanya bisa di jalankan di browser, dan akhirnya dengan adanya node js maka js&v8 ini bisa keluar dari browser dan bisa di gunakan, penyiptanya iala ryan dahl
+
+karakter node js :
+1. asynchronus & Event driven
+2. non-blocking
+3. cross platfrom
+4. sinfle threaded but highly scalable
+5. MTI License
+6. NPM
+
+fitur utama node js :
+1. file system
+2. buffer
+3. Http & https
+4. REPL
+5. Console
+6. crypto grafi
+7. zlib
+
+node js cocok untuk
+1. dynamic single page application
+2. rasltime app (cht, multiplayer)
+3. api
+4. streaming app
+5. microservise
+6. command line tool
+
+
+REPL = read eval print loop
+ketika mengerjakan di terminal/gitbash, kegunaan kursor atas bawa itu untuk melihat history kita mengetik apa saja, dan jangan panik ketika ada salah ketik
+
+ketika mau exit ketik .exit
+ketika suatu code tidak jadi di jalakan ketik .break
+contoh const sayHello = (nama,umur) =>{ <bingung ini mau apa dan tidak jadi pakai ini maka ketik> .break
+agar mengeluarkn dari dalamnya
+.editor untuk membuat banyak hal dalam 1 ruangan 
+
+NodeJs Modules
+1. core modules 
+2. local modules
+3. third party modules
+
+baca documentasi modules = https://nodejs.org/dist/latest-v12.x/docs/api/
+
+APA ITU NPM :
+dulu NPM itu : Node package Manager
+dulu npm itu tempat programer menyimpan module2 mereka
+npm itu biasanya dibuat untuk Project yang open sourch
+dan aksesnya bisa diatur secara public dan private
+ketika mengetik npm init di terminal akan di kasi tahu ini kita
+saat pakai Project kecil2 buat belajar ketik npm init -y agar terjawab yes semua
+"$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (8-npm)
+"yang mana (8-npm) itu package kita, secara default tetapi namanya bisa di ubah jika mau, jika tidak, tidak usah diubah, setelah itu pencet enter."
+version: (1.0.0) = digit ke 3 itu disebut patch perbaikan pada bug fix saja, digit ke 2 itu artinya perubahan minor, yang depan sendiri itu major;
+entry point: (index.js) = ini adalah kira2 file yang pertama di akses mau apa, taruh file di sebelahnya indeks.js;
+"test command: <kosongi dulu>
+git repository: (repository untuk di github reponya namanya apa <kosongi saja jika masi belum buat>)
+keywords: = ini-kosongi dulu karena ini itu tentang kyword package kalian/ aplication kalian;
+author:  = isi nama kalian
+jika sudah maka akan muncul di file kalian namanya pakage.json, dan di isinya biasany tidak di ubah kecuali akan di uabh, di bagian script itu untuk menjalankan node kalian tapi lewat npm
+dan ("  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }", test itu secara default kita bisa memangil scriptnya dengan keyword test
+
+dan ketika di ubah semisal awalnya adalah = ("scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }") menjadi => (   "scripts": {
+    "start" : "node app",
+    "dev" : "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  });
+maka ketika nama ada yang bukan standart seperti "dev" maka jalankannya dengan model "npm run dev"
+
+untuk kita mencari package maka kunjungi npmnode,dan cari yang kalian mau yang mana ini mempermudah kalian untuk melakukan validasi terhadap string, jadi kalian tidak usah repot untuk membuat validasi
+untuk downloadnya di terminal kalian ketik (npm i <namaPackagenya>), yang mana i = install,
+dan untuk menghapus jika kalian salah instal / sudah tida di butuhkan lagi ketik npm uninstall <namanya>, jika mau install lebih spesifik tulis 
+npm i validator@<tulis versinya>
+
+
+CLI = command line interface
+yaitu aplikasi yang berjalan diterminal
